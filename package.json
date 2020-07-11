@@ -1,0 +1,22 @@
+{
+  "name": "railnads-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dbdump": "mongodump -v --db dev --gzip --archive=db/dump.gz",
+    "dbrestore": "mongorestore -v --gzip --archive=db/dump.gz --db dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avatar-generator": "^2.0.4",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "parse-dashboard": "^2.1.0",
+    "parse-server": "^4.2.0"
+  }
+}
