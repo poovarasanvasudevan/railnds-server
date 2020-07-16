@@ -24,6 +24,7 @@ const parseServer = new ParseServer({
     javascriptKey: "jskey",
     serverURL: 'http://localhost:1337/parse',
    // cacheAdapter: redisCache,
+    clientKey: "clientkey",
     liveQuery: {
         classNames: ['ChatMessages', 'User', "Group"]
     }
